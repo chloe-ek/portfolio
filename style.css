@@ -292,6 +292,8 @@ section {
     flex-direction: column;
 }
 
+
+
 .about-containers,
 .about-details-container {
     display: flex;
@@ -371,6 +373,35 @@ article {
 
 article .icon {
     cursor: default;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+    justify-content: flex-start;
+}
+
+.check-icon {
+    width: 24px;
+    /* 고정 너비로 아이콘 일렬 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.skill-text {
+    text-align: left;
+    font-weight: 500;
+    color: #333;
 }
 
 /* PROJECTS SECTION */
