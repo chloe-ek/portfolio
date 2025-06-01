@@ -12,7 +12,7 @@ const Header = () => {
                 <Image src={assets.hand_icon} alt='' className="rounded-full w-6"/></h3>
 
         <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">
-        a full-stack development student based in Vancouver.</h1>
+        A full-stack development student based in Vancouver.</h1>
           <p className="max-w-3xl mx-auto font-Ovo">I enjoy building practical applications that solve real problems with clean, maintainable code.
                         
                         I'm always looking to improve, learn new tools, and work on projects that make a difference.</p>
