@@ -78,24 +78,39 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        title: 'Tadpool',
+        description: 'Dating App',
+        bgImage: '/tadpool.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+        title: 'Real Estate',
+        description: 'Web Site',
+        bgImage: '/realEstate.png',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
+        title: 'Chat App',
+        description: 'Chat Web',
+        bgImage: '/chatapp.png',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        title: 'Assignment Tracker',
+        description: 'Android App',
+        bgImage: '/AssignmentTracker.png',
+    },
+    {
+        title: 'Pennywise',
+        description: 'Finance App',
+        bgImage: '/pennywise.png',
+    },
+    {
+        title: 'Dark Night Maze',
+        description: 'JavaFX Game',
+        bgImage: '/darknightmaze.png',
+    },
+    {
+        title: 'Neighbourly',
+        description: 'Community App',
+        bgImage: '/neighbourly.png',
     },
 ]
 
