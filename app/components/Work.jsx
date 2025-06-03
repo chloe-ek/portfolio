@@ -1,21 +1,45 @@
-import { assets, workData } from "@/assets/assets"
-import Image from "next/image"
+import { assets, workData } from "@/assets/assets";
+import { motion } from "motion/react";
+import Image from "next/image";
+
 
 const Work = () => {
   return (
-    <div id='work' className="w-full px-[12%] py-10 scroll-mt-20">
-        <h4 className="text-center mb-2 text-lg font-Ovo">My portfolio</h4>
-        <h2 className="text-center text-5xl font-Ovo">My latest work</h2>
+    <motion.div
+    initial={{ opacity: 0}}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+    id='work' className="w-full px-[12%] py-10 scroll-mt-20">
+        <motion.h4
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="text-center mb-2 text-lg font-Ovo">My portfolio</motion.h4>
+        <motion.h2
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+         className="text-center text-5xl font-Ovo">My latest work</motion.h2>
 
-        <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+        <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1}}
+        transition={{ duration: 0.5, delay: 0.7 }} 
+        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
         Welcome to my portfolio! Here, you'll find a collection of my latest projects that showcase my skills and creativity.
         Each piece reflects my dedication to quality and innovation in web development. I hope you enjoy exploring my work as much as I enjoyed creating it!
-        </p>
+        </motion.p>
 
 
-        <div className="grid grid-cols-auto gap-6 my-10">
+        <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1}}
+        transition={{ duration: 0.9, delay: 0.3 }} 
+        className="grid grid-cols-auto gap-6 my-10">
             {workData.map((project, index) => (
-                <div key={index}
+                <motion.div
+                whileHover={{scale : 1.05}} 
+                    key={index}
                     className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
                     style={{ backgroundImage: `url(${project.bgImage})` }}>
                     <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2
@@ -29,17 +53,20 @@ const Work = () => {
                             <Image src={assets.send_icon} alt="Send Icon" className="w-5" />
                         </div>
                     </div>
-                    
-                </div>
+                </motion.div>
             ))}
-        </div>
+        </motion.div>
 
-        <a href="" className="w-max flex items-center justify-center gap-2 text-gray-700 cursor-pointer
+        <motion.a
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1}}
+        transition={{ duration: 0.5, delay: 0.8 }}
+        href="" className="w-max flex items-center justify-center gap-2 text-gray-700 cursor-pointer
         border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500">
             Show more <Image src={assets.right_arrow_bold} alt="Right Arrow" className="w-4" />
-        </a>
+        </motion.a>
 
-    </div>
+    </motion.div>
   )
 }
 
