@@ -1,6 +1,5 @@
 import { assets } from "@/assets/assets";
 import { motion } from "motion/react";
-import Image from "next/image";
 
 const Header = () => {
   return (
@@ -10,7 +9,7 @@ const Header = () => {
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}>
-          <Image src={assets.user_image} alt='' className="w-32"/>
+          <img src={assets.user_image} alt='' className="w-32"/>
         </motion.div>
             
         
@@ -19,7 +18,7 @@ const Header = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">Hi, I'm Chloe 
-                <Image src={assets.hand_icon} alt='' className="rounded-full w-6"/></motion.h3>
+                <img src={assets.hand_icon} alt='' className="rounded-full w-6"/></motion.h3>
 
         <motion.h1 
           initial={{ y: -30, opacity: 0}}
@@ -43,14 +42,14 @@ const Header = () => {
               transition={{ duration: 0.6, delay: 1 }}
               href="#contact" 
             className="px-10 py-3 border border-white rounded-full flex bg-black text-white items-center gap-2">
-              contact me <Image src={assets.right_arrow_white} alt='' className="w-4"/></motion.a>
+              contact me <img src={assets.right_arrow_white} alt='' className="w-4"/></motion.a>
             <motion.a 
               initial={{ y: 30, opacity: 0}}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 1.2 }}
               href="/Chloe_Kwon_resume.pdf" download 
             className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2">
-              my resume <Image src={assets.download_icon} alt='' className="w-4"/></motion.a>
+              my resume <img src={assets.download_icon} alt='' className="w-4"/></motion.a>
           </div>
           </div>
         

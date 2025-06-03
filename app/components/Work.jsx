@@ -1,6 +1,5 @@
 import { assets, workData } from "@/assets/assets";
 import { motion } from "motion/react";
-import Image from "next/image";
 
 
 const Work = () => {
@@ -50,7 +49,7 @@ const Work = () => {
                         </div>
                         <div className="border rounded-full border-black w-9 aspect-square flex
                         items-center justify-center shawdow-[2px_2px_0_#000] group-hover:bg-red-200">
-                            <Image src={assets.send_icon} alt="Send Icon" className="w-5" />
+                            <img src={assets.send_icon} alt="Send Icon" className="w-5" />
                         </div>
                     </div>
                 </motion.div>
@@ -63,7 +62,7 @@ const Work = () => {
         transition={{ duration: 0.5, delay: 0.8 }}
         href="" className="w-max flex items-center justify-center gap-2 text-gray-700 cursor-pointer
         border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500">
-            Show more <Image src={assets.right_arrow_bold} alt="Right Arrow" className="w-4" />
+            Show more <img src={assets.right_arrow_bold} alt="Right Arrow" className="w-4" />
         </motion.a>
 
     </motion.div>

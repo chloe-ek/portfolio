@@ -1,118 +1,82 @@
-import arrow_icon_dark from './arrow-icon-dark.png';
-import arrow_icon from './arrow-icon.png';
-import close_black from './close-black.png';
-import close_white from './close-white.png';
-import code_icon_dark from './code-icon-dark.png';
-import code_icon from './code-icon.png';
-import logo_dark from './dark-logo.png';
-import download_icon from './download-icon.png';
-import edu_icon_dark from './edu-icon-dark.png';
-import edu_icon from './edu-icon.png';
-import figma from './figma.png';
-import firebase from './firebase.png';
-import git from './git.png';
-import graphics_icon from './graphics-icon.png';
-import hand_icon from './hand-icon.png';
-import header_bg_color from './header-bg-color.png';
-import logo from './logo.png';
-import mail_icon from './mail_icon.png';
-import mail_icon_dark from './mail_icon_dark.png';
-import menu_black from './menu-black.png';
-import menu_white from './menu-white.png';
-import mobile_icon from './mobile-icon.png';
-import mongodb from './mongodb.png';
-import moon_icon from './moon_icon.png';
-import user_image from './profile.png';
-import project_icon_dark from './project-icon-dark.png';
-import project_icon from './project-icon.png';
-import right_arrow_bold_dark from './right-arrow-bold-dark.png';
-import right_arrow_bold from './right-arrow-bold.png';
-import right_arrow_white from './right-arrow-white.png';
-import right_arrow from './right-arrow.png';
-import profile_img from './second.png';
-import send_icon from './send-icon.png';
-import sun_icon from './sun_icon.png';
-import ui_icon from './ui-icon.png';
-import vscode from './vscode.png';
-import web_icon from './web-icon.png';
 
 export const assets = {
-    user_image,
-    code_icon,
-    code_icon_dark,
-    edu_icon,
-    edu_icon_dark,
-    project_icon,
-    project_icon_dark,
-    vscode,
-    firebase,
-    figma,
-    git,
-    mongodb,
-    right_arrow_white,
-    logo,
-    logo_dark,
-    mail_icon,
-    mail_icon_dark,
-    profile_img,
-    download_icon,
-    hand_icon,
-    header_bg_color,
-    moon_icon,
-    sun_icon,
-    arrow_icon,
-    arrow_icon_dark,
-    menu_black,
-    menu_white,
-    close_black,
-    close_white,
-    web_icon,
-    mobile_icon,
-    ui_icon,
-    graphics_icon,
-    right_arrow,
-    send_icon,
-    right_arrow_bold,
-    right_arrow_bold_dark
+    user_image: "/Portfolio/profile.png",
+    code_icon: "/Portfolio/code-icon.png",
+    code_icon_dark: "/Portfolio/code-icon-dark.png",
+    edu_icon: "/Portfolio/edu-icon.png",
+    edu_icon_dark: "/Portfolio/edu-icon-dark.png",
+    project_icon: "/Portfolio/project-icon.png",
+    project_icon_dark: "/Portfolio/project-icon-dark.png",
+    vscode: "/Portfolio/vscode.png",
+    firebase: "/Portfolio/firebase.png",
+    figma: "/Portfolio/figma.png",
+    git: "/Portfolio/git.png",
+    mongodb: "/Portfolio/mongodb.png",
+    right_arrow_white: "/Portfolio/right-arrow-white.png",
+    logo: "/Portfolio/logo.png",
+    logo_dark: "/Portfolio/dark-logo.png",
+    mail_icon: "/Portfolio/mail_icon.png",
+    mail_icon_dark: "/Portfolio/mail_icon_dark.png",
+    profile_img: "/Portfolio/second.png",
+    download_icon: "/Portfolio/download-icon.png",
+    hand_icon: "/Portfolio/hand-icon.png",
+    header_bg_color: "/Portfolio/header-bg-color.png",
+    moon_icon: "/Portfolio/moon_icon.png",
+    sun_icon: "/Portfolio/sun_icon.png",
+    arrow_icon: "/Portfolio/arrow-icon.png",
+    arrow_icon_dark: "/Portfolio/arrow-icon-dark.png",
+    menu_black: "/Portfolio/menu-black.png",
+    menu_white: "/Portfolio/menu-white.png",
+    close_black: "/Portfolio/close-black.png",
+    close_white: "/Portfolio/close-white.png",
+    web_icon: "/Portfolio/web-icon.png",
+    mobile_icon: "/Portfolio/mobile-icon.png",
+    ui_icon: "/Portfolio/ui-icon.png",
+    graphics_icon: "/Portfolio/graphics-icon.png",
+    right_arrow: "/Portfolio/right-arrow.png",
+    send_icon: "/Portfolio/send-icon.png",
+    right_arrow_bold: "/Portfolio/right-arrow-bold.png",
+    right_arrow_bold_dark: "/Portfolio/right-arrow-bold-dark.png"
 };
 
 export const workData = [
     {
         title: 'Tadpool',
         description: 'Dating App',
-        bgImage: '/tadpool.png',
+        bgImage: '/Portfolio/tadpool.png',
     },
     {
         title: 'Real Estate',
         description: 'Web Site',
-        bgImage: '/realEstate.png',
+        bgImage: '/Portfolio/realEstate.png',
     },
     {
         title: 'Chat App',
         description: 'Chat Web',
-        bgImage: '/chatapp.png',
+        bgImage: '/Portfolio/chatapp.png',
     },
     {
         title: 'Assignment Tracker',
         description: 'Android App',
-        bgImage: '/AssignmentTracker.png',
+        bgImage: '/Portfolio/AssignmentTracker.png',
     },
     {
         title: 'Pennywise',
         description: 'Finance App',
-        bgImage: '/pennywise.png',
+        bgImage: '/Portfolio/pennywise.png',
     },
     {
         title: 'Dark Night Maze',
         description: 'JavaFX Game',
-        bgImage: '/darknightmaze.png',
+        bgImage: '/Portfolio/darknightmaze.png',
     },
     {
         title: 'Neighbourly',
         description: 'Community App',
-        bgImage: '/neighbourly.png',
+        bgImage: '/Portfolio/neighbourly.png',
     },
 ]
+
 
 export const serviceData = [
     { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
